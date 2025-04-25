@@ -1,0 +1,93 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Static Background Image */
+  body {
+    background: url('https://tse3.mm.bing.net/th?id=OIP.Fcy_0oIlamEXCh6qyNJmDAHaFh&pid=Api&P=0&h=220') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Weather Card */
+  .app-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .weather-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Input Section */
+  .search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1 1 200px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Weather Info */
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  #weatherIcon img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  #temperature {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  #description {
+    text-transform: capitalize;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .weather-card {
+      padding: 20px;
+    }
+  }
+  
